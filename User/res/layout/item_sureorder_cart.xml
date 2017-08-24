@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/ll_item_carts"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_item_goods"
+        android:gravity="center"
+        android:padding="1dp" >
+
+        <ImageView
+            android:id="@+id/iv_item_carts"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/icon" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_carts_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ll_item_carts"
+        android:layout_toRightOf="@+id/ll_item_carts"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/gray_tv"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_item_carts_guige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_carts_title"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/ll_item_carts"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/gray_tv"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ll_item_carts"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/ll_item_carts"
+        android:gravity="clip_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_item_carts_price_jifen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="积分: "
+            android:textColor="@color/gray_tv"
+            android:textSize="15sp" 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_item_carts_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/yellow"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_goods_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="x1 "
+            android:textColor="@color/gray_tv"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/ll_item_carts"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray_line" />
+
+</RelativeLayout>

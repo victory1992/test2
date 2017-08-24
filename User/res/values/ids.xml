@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="selected_view" type="id"/>
+    <item name="left_menu" type="id" />
+    <item name="right_menu" type="id" />
+    <item name="frg_container5" type="id" />
+    <item name="frg_container6" type="id" />
+    <item name="gridview" type="id"/>
+    <item name="webview" type="id"/>
+    <item name="scrollview" type="id"/>
+</resources>

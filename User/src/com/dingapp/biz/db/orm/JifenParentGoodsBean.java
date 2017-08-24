@@ -1,0 +1,1 @@
+package com.dingapp.biz.db.orm;import java.util.List;public class JifenParentGoodsBean {	private List<JiFenGoodsListBean> goods_info;	public List<JiFenGoodsListBean> getGoods_info() {		return goods_info;	}	public void setGoods_info(List<JiFenGoodsListBean> goods_info) {		this.goods_info = goods_info;	}	}

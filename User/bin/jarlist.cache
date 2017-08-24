@@ -1,0 +1,11 @@
+# cache for current jar dependency. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1476261686000 1336184 852db0a0ad67d82bbe73eeb57e466612eec056e9 /Users/xuchen/Desktop/hanguda/HangudaUser/easeui/libs/BaiduLBS_Android.jar
+1476261726000 1336184 852db0a0ad67d82bbe73eeb57e466612eec056e9 /Users/xuchen/Desktop/hanguda/HangudaUser/User/libs/BaiduLBS_Android.jar
+1474092283000 50361 0fcaa443f7b6ad5f2d9b6a68c55972a366aaac5a /Users/xuchen/Desktop/hanguda/HangudaUser/User/libs/wire-runtime-2.1.2.jar
+1467365986000 50361 0fcaa443f7b6ad5f2d9b6a68c55972a366aaac5a /Users/xuchen/Desktop/hanguda/HangudaUser/PushSDK/libs/wire-runtime-2.1.2.jar
+1467365986000 65928 98476622f10715998eacf9240d6b479f12c66143 /Users/xuchen/Desktop/hanguda/HangudaUser/PushSDK/libs/okio-1.6.0.jar
+1474092283000 65928 98476622f10715998eacf9240d6b479f12c66143 /Users/xuchen/Desktop/hanguda/HangudaUser/User/libs/okio-1.6.0.jar
+1474092283000 1184450 e19387dc3b060af32f5401f84fbe246635256955 /Users/xuchen/Desktop/hanguda/HangudaUser/User/libs/android-support-v4.jar
+1467367585000 1184450 e19387dc3b060af32f5401f84fbe246635256955 /Users/xuchen/Desktop/hanguda/HangudaUser/easeui/libs/android-support-v4.jar

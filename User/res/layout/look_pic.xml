@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/num_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/gang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/num_pic"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/num_pic"
+            android:text="/"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/num_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/gang"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/gang"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_picback"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/num_pic"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="22dp"
+            android:padding="10dp"
+            android:src="@drawable/back_piclook" />
+    </RelativeLayout>
+
+    <com.dingapp.biz.page.customview.MyViewPager
+        android:id="@+id/vp_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.dingapp.biz.page.customview.MyViewPager>
+
+</LinearLayout>

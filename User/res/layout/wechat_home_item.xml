@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.dingapp.biz.page.swpiedelete.SwipeLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_header"
+                android:layout_width="62dp"
+                android:layout_height="match_parent" >
+
+                <com.dingapp.commonui.widget.CircleImageView
+                    android:id="@+id/img_header"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:src="@drawable/icon"
+                    app:border_color="@android:color/transparent"
+                    app:border_width="0dp" />
+
+                <TextView
+                    android:id="@+id/tv_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ease_unread_count_bg"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_chat_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/rl_header"
+                android:text="葫芦红包"
+                android:textColor="@color/black_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_chat_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/rl_header"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="葫芦红包添加您为好友葫芦红包添加您为好友葫芦红包添加您为好友葫芦红包添加您为好友葫芦红包添加您为好友葫芦红包添加您为好友葫芦红包添加您为好友"
+                android:textColor="@color/chat_gray"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_chat_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/tv_chat_username"
+                android:layout_marginRight="14dp"
+                android:text="周六"
+                android:textColor="@color/chat_gray"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/app_color"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </com.dingapp.biz.page.swpiedelete.SwipeLayout>
+
+</LinearLayout>

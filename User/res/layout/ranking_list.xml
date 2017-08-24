@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_height"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="排行榜"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/head_text" />
+
+        <ImageView
+            android:id="@+id/iv_rankinglist_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="50dp"
+            android:src="@drawable/iv_back" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line" />
+
+    <view.refresh.PullToRefreshScrollView
+        android:id="@+id/ranklist_pulltorefreshscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_color"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/ll_ranklist_second"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="invisible" >
+
+                    <com.dingapp.commonui.widget.RoundCornerImageView
+                        android:id="@+id/iv_ranklist_second"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:focusable="false"
+                        android:src="@drawable/icon" />
+
+                    <ImageView
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:src="@drawable/iv_ranklist_second" />
+
+                    <TextView
+                        android:id="@+id/tv_ranklist_second_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ranklist_second_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_ranklist_first"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="invisible" >
+
+                    <com.dingapp.commonui.widget.RoundCornerImageView
+                        android:id="@+id/iv_ranklist_first"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:focusable="false"
+                        android:src="@drawable/icon" />
+
+                    <ImageView
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:src="@drawable/iv_ranklist_first" />
+
+                    <TextView
+                        android:id="@+id/tv_ranklist_first_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:text="ss"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ranklist_first_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="113.00元"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_ranklist_third"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="invisible" >
+
+                    <com.dingapp.commonui.widget.RoundCornerImageView
+                        android:id="@+id/iv_ranklist_third"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:focusable="false"
+                        android:src="@drawable/icon" />
+
+                    <ImageView
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:src="@drawable/iv_ranklist_third" />
+
+                    <TextView
+                        android:id="@+id/tv_ranklist_third_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:text="ss"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ranklist_third_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="113.00元"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="18dp"
+                    android:text="名次"
+                    android:textColor="@color/gray_tv"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="18dp"
+                    android:text="好友"
+                    android:textColor="@color/gray_tv"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="18dp"
+                    android:text="收入(元)"
+                    android:textColor="@color/gray_tv"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <com.dingapp.biz.page.customview.MyListView
+                android:id="@+id/ranking_pulltorefreshlistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                cacheColorHint="#00000000"
+                android:focusable="false"
+                android:gravity="right"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" >
+            </com.dingapp.biz.page.customview.MyListView>
+        </LinearLayout>
+    </view.refresh.PullToRefreshScrollView>
+
+</LinearLayout>

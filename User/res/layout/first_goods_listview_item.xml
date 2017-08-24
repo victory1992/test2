@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_first_goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_recommend_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:padding="13dp"
+                android:text="掌柜推荐"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/arrow"
+                android:text="更多"
+                android:textColor="@color/gray_tv"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <com.dingapp.biz.page.customview.MyGridView
+            android:id="@+id/gv_recommend_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:focusable="false"
+            android:gravity="center"
+            android:horizontalSpacing="4dp"
+            android:listSelector="#00000000"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="4dp" >
+        </com.dingapp.biz.page.customview.MyGridView>
+    </LinearLayout>
+
+</LinearLayout>

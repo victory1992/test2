@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_height"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的标签"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/head_text" />
+
+        <ImageView
+            android:id="@+id/iv_modify_signtags_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="50dp"
+            android:src="@drawable/iv_back" />
+
+        <TextView
+            android:id="@+id/tv_modify_signtags_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="确定"
+            android:textColor="@color/app_color"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="15dp"
+                android:text="我的标签"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <com.dingapp.biz.page.customview.MyGridView
+                android:id="@+id/gv_member_mysigntags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                cacheColorHint="#00000000"
+                android:columnWidth="20dp"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:focusable="false"
+                android:gravity="right"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:scrollbars="none" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="15dp"
+                android:text="可能感兴趣的标签"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <com.dingapp.biz.page.customview.MyGridView
+                android:id="@+id/gv_member_mysigntags2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                cacheColorHint="#00000000"
+                android:columnWidth="20dp"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:focusable="false"
+                android:gravity="right"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_member_mysigntags_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_btn_login"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="换一批"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</LinearLayout>

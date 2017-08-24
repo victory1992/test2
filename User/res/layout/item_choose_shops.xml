@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp" >
+
+    <CheckBox
+        android:id="@+id/cb_selected_shops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:button="@drawable/selector_cart"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <LinearLayout
+        android:id="@+id/ll_item_shops"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/cb_selected_shops"
+        android:background="@drawable/shape_item_goods"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/iv_item_shops"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:src="@drawable/icon" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_shops_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ll_item_shops"
+        android:layout_toRightOf="@+id/ll_item_shops"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="我设计的一款穿鞋子"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_item_shopaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_shops_title"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/ll_item_shops"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="我设计的"
+        android:textColor="@color/gray_tv"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_choose_shops_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_shopaddress"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/ll_item_shops"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_choose_shops_phone" />
+
+        <TextView
+            android:id="@+id/tv_item_shopsphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_shops_title"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ll_item_shops"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="15791174778"
+            android:textColor="@color/app_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_item_myteam_header"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/tv_item_myteam_naem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_item_myteam_header"
+            android:layout_toRightOf="@+id/iv_item_myteam_header"
+            android:text="企程易"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_item_myteam_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_item_myteam_header"
+            android:layout_toRightOf="@+id/iv_item_myteam_header"
+            android:text="加入时间: 2015-12-30"
+            android:textColor="@color/gray_tv"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_item_myteam_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="15dp"
+            android:text="+50.0元"
+            android:textColor="@color/app_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

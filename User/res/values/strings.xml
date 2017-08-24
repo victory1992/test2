@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">汉固达</string>
+    <!-- 服务器连接信息  blin.cms.dingapp.com 28081 -->
+    <string name="WHP_Server">app.huluhongbao.net</string>
+    <string name="WHP_Port">28080</string>
+    <string name="WHP_Timeout">5000</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_release_label">放开以刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+    <!--  -->
+    <string name="folder_all">all pictures</string>
+    <string name="preview">preview</string>
+    <string name="msg_no_camera">No camera system</string>
+    <string name="msg_amount_limit">has reached the highest number</string>
+    <string name="action_done">complete</string>
+    <string name="photo_unit">picture</string>
+    <string name="tip_take_photo">Take photos</string>
+    <string name="no_more_data">no more data</string>
+
+</resources>

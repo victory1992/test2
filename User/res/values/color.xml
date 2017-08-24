@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_bg">#EFEFF4</color>
+    <color name="app_dark">#00244e</color>
+    <color name="app_color"> #f66e00</color>
+    <color name="app_color_main"> #0c62a9</color>
+    <color name="app_red"> #f25251</color>
+    <color name="app_gray"> #f0eff5</color>
+    <color name="black_tv"> #333333</color>
+    <color name="gray_line"> #d9d9d9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#333333</color>
+    <color name="gray_tv">#808080</color>
+    <color name="gray_hint">#abb4bb</color>
+    <color name="mass_normal">#55fe954a</color>
+    <color name="mass_press">#00000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="black_text">#434343</color>
+    <color name="blue_shape">#1EC2B7</color>
+    <color name="chat_gray">#8d8d8d</color>
+    <color name="light_color">#55f66e00</color>
+    <color name="color_ff9000">#ff9000</color>
+    <color name="yellow">#f66e00</color>
+    <color name="color_a1a1a1">#a1a1a1</color>
+
+</resources>

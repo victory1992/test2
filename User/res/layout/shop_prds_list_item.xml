@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp" >
+
+            <com.dingapp.commonui.widget.CircleImageView
+                android:id="@+id/img_user_header"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/img_user_header"
+                android:ellipsize="end"
+                android:maxEms="6"
+                android:singleLine="true"
+                android:text="用户名嘻哈嘻哈嘻哈嘻哈嘻哈嘻哈"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp" />
+
+            <RatingBar
+                android:id="@+id/rb_goods_comment"
+                style="@style/room_rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/tv_user_name"
+                android:isIndicator="true"
+                android:max="5"
+                android:progress="3" />
+        </RelativeLayout>
+
+        
+
+        <TextView
+            android:id="@+id/tv_comment_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="这款手机很不错啊，不发热，这款手机很不错啊，不发热，这款手机很不错啊，不发热，这款手机很不错啊，不发热，这款手机很不错啊，不发热，这款手机很不错啊，不发热，这款手机很不错啊，不发热，"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_imgs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="5dp" 
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="14dp" />
+
+            <ImageView
+                android:id="@+id/img_2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="14dp" />
+
+            <ImageView
+                android:id="@+id/img_3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="14dp" />
+
+            <ImageView
+                android:id="@+id/img_4"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="7dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="2015-09-09"
+            android:textColor="#999999"
+            android:textSize="10sp" />
+        <View 
+            android:id="@+id/v_comment_bottom"
+            android:layout_height="13dp"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+</LinearLayout>

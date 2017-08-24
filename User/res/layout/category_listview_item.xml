@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_category_second_focus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_catgory_second_focus"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/iv_login_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_category_second_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_category_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="热卖选购"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/arrow"
+            android:text="更多"
+            android:textColor="@color/gray_tv"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <com.dingapp.biz.page.customview.MyGridView
+        android:id="@+id/mygridview_categroy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:horizontalSpacing="0.5dp"
+        android:listSelector="@android:color/transparent"
+        android:background="@color/app_gray"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0.5dp" >
+    </com.dingapp.biz.page.customview.MyGridView>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_systemmsg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="45dp"
+            android:src="@drawable/iv_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="系统消息"
+            android:textColor="@color/black"
+            android:textSize="@dimen/head_text" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line" />
+
+    <view.refresh.PullToRefreshScrollView
+        android:id="@+id/systemmsg_pulltorefreshscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.dingapp.biz.page.customview.MyListView
+                android:id="@+id/systemmsg_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                cacheColorHint="#00000000"
+                android:focusable="false"
+                android:gravity="right"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" >
+            </com.dingapp.biz.page.customview.MyListView>
+        </LinearLayout>
+    </view.refresh.PullToRefreshScrollView>
+
+</LinearLayout>

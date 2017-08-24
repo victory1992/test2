@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_height"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提现记录"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/head_text" />
+
+        <ImageView
+            android:id="@+id/iv_moneyrecord_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="50dp"
+            android:src="@drawable/iv_back" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line" />
+
+    <view.refresh.PullToRefreshScrollView
+        android:id="@+id/moneyrecord_pulltorefreshscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.dingapp.biz.page.customview.MyExpandableListView
+                android:id="@+id/lv_money_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                cacheColorHint="#00000000"
+                android:background="@color/white"
+                android:focusable="false"
+                android:gravity="right"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                android:divider="@color/gray_line"
+                android:dividerHeight="0.1dp"
+                android:groupIndicator="@null" />
+        </LinearLayout>
+    </view.refresh.PullToRefreshScrollView>
+
+</LinearLayout>
